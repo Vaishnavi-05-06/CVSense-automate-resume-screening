@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F8F9FA" />
+    <meta
+      name="description"
+      content="CVSense — resume screening that explains itself. Score PDF, DOCX and text resumes against a job description with keyword and semantic evidence."
+    />
+    <title>CVSense — Resume screening that explains itself</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Cpath d='M9 11h13M9 16h8M9 21h5' stroke='white' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to content</a>
+
+    <div class="shell">
+      <aside class="sidebar" id="sidebar"></aside>
+      <div class="content">
+        <header class="topbar" id="topbar"></header>
+        <main class="app-main" id="app" tabindex="-1"></main>
+      </div>
+    </div>
+
+    <nav class="tabbar" id="tabbar" aria-label="Primary"></nav>
+
+    <div class="overlay" id="overlay" hidden></div>
+    <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Candidate detail" hidden></aside>
+    <div id="modalRoot"></div>
+
+    <div class="drop-overlay" id="dropOverlay" hidden>
+      <div class="drop-card">
+        <div class="drop-icon" id="dropIcon"></div>
+        <h2>Drop resumes to screen</h2>
+        <p>PDF, DOCX, TXT or MD — they are parsed in this browser and never uploaded.</p>
+      </div>
+    </div>
+
+    <div class="toast-root" id="toastRoot" aria-live="polite" aria-atomic="true"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

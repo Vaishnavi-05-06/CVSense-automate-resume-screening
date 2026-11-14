@@ -1,0 +1,14 @@
+{
+  "name": "cvsense",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Resume screening that explains itself — multi-role, offline keyword + semantic matching in the browser.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "serve:python": "python3 -m http.server 3000"
+  }
+}
